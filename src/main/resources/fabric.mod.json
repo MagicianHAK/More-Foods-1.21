@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morefoods",
+	"version": "${version}",
+	"name": "More Foods",
+	"description": "This is a mod that adds new food items to the game.",
+	"authors": [
+		"MagicianHAK"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/morefoods/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.magician.morefoods.MoreFoods"
+		],
+		"fabric-datagen": [
+			"net.magician.morefoods.MoreFoodsDataGenerator"
+		],
+		"client": [
+			"net.magician.morefoods.MoreFoodsClient"
+		]
+	},
+	"mixins": [
+		"morefoods.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
